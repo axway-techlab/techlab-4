@@ -3,7 +3,7 @@
   "path" : "/cft/api/v1",
   "state" : "published",
   "version" : "1.7.0",
-  "organization" : "MFT",
+  "organization" : "API Development",
   "apiDefinition" : "TransferCFT.json",
   "backendBasepath" : "https://ptx140.demo.axway.com:2768/cft/api/v1",
   "image" : "api-image.jpg",
@@ -38,5 +38,5 @@
     "inbound" : "false",
     "outbound" : "true"
   } ],
-  "clientOrganizations" : [ "MFT" ]
+  "clientOrganizations" : [ "API Development" ]
 }
