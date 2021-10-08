@@ -53,11 +53,5 @@
     "inbound" : "false",
     "outbound" : "true"
   } ],
-  "applications" : [ {
-    "name" : "TESTLMA",
-    "enabled" : true,
-    "state" : "approved",
-    "oauthResources" : [ ]
-  } ],
   "clientOrganizations" : [ "API Development" ]
 }
