@@ -1,0 +1,48 @@
+{
+  "name" : "STEndUser",
+  "path" : "/api/v2.0",
+  "state" : "published",
+  "version" : "2.0.0",
+  "organization" : "MFT",
+  "apiDefinition" : "STEndUser.json",
+  "backendBasepath" : "https://ptx140.demo.axway.com:8443/api/v2.0",
+  "securityProfiles" : [ {
+    "name" : "_default",
+    "isDefault" : true,
+    "devices" : [ {
+      "name" : "API Key",
+      "type" : "apiKey",
+      "order" : 1,
+      "properties" : {
+        "apiKeyFieldName" : "KeyId",
+        "takeFrom" : "HEADER",
+        "removeCredentialsOnSuccess" : "true"
+      }
+    } ]
+  } ],
+  "authenticationProfiles" : [ {
+    "name" : "_default",
+    "isDefault" : true,
+    "parameters" : {
+      "_id_" : 0
+    },
+    "type" : "none"
+  }, {
+    "name" : "ST",
+    "isDefault" : false,
+    "parameters" : {
+      "username" : "sandeep",
+      "_id_" : 1
+    },
+    "type" : "http_basic"
+  } ],
+  "tags" : {
+    "Team" : [ "MFT" ]
+  },
+  "caCerts" : [ {
+    "certFile" : "demo.axway.com.crt",
+    "inbound" : "false",
+    "outbound" : "true"
+  } ],
+  "clientOrganizations" : [ "MFT" ]
+}

@@ -1,0 +1,63 @@
+{
+  "name" : "FlowManager",
+  "path" : "/api/",
+  "state" : "published",
+  "version" : "2.2.0",
+  "organization" : "MFT",
+  "apiDefinition" : "FlowManager.json",
+  "backendBasepath" : "https://ptx140.demo.axway.com:8081/api",
+  "image" : "api-image.jpg",
+  "outboundProfiles" : {
+    "_default" : {
+      "routeType" : "proxy",
+      "authenticationProfile" : "Token"
+    }
+  },
+  "securityProfiles" : [ {
+    "name" : "_default",
+    "isDefault" : true,
+    "devices" : [ {
+      "name" : "API Key",
+      "type" : "apiKey",
+      "order" : 1,
+      "properties" : {
+        "apiKeyFieldName" : "KeyId",
+        "takeFrom" : "HEADER",
+        "removeCredentialsOnSuccess" : "true"
+      }
+    } ]
+  } ],
+  "authenticationProfiles" : [ {
+    "name" : "_default",
+    "isDefault" : true,
+    "parameters" : {
+      "_id_" : 0
+    },
+    "type" : "none"
+  }, {
+    "name" : "Token",
+    "isDefault" : false,
+    "parameters" : {
+      "apiKey" : "token=36a208fa-9758-4ab4-b985-b8aa59308f8a",
+      "apiKeyField" : "Cookie",
+      "httpLocation" : "HEADER",
+      "_id_" : 1
+    },
+    "type" : "apiKey"
+  } ],
+  "tags" : {
+    "Team" : [ "MFT" ]
+  },
+  "caCerts" : [ {
+    "certFile" : "MFT_GOVERNANCECA.crt",
+    "inbound" : "false",
+    "outbound" : "true"
+  } ],
+  "applications" : [ {
+    "name" : "TESTLMA",
+    "enabled" : true,
+    "state" : "approved",
+    "oauthResources" : [ ]
+  } ],
+  "clientOrganizations" : [ "MFT" ]
+}
