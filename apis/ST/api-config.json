@@ -6,6 +6,7 @@
   "organization" : "API Development",
   "apiDefinition" : "STEndUser.json",
   "backendBasepath" : "https://ptx140.demo.axway.com:8443/api/v2.0",
+  "image" : "api-image.jpg",
   "securityProfiles" : [ {
     "name" : "_default",
     "isDefault" : true,
