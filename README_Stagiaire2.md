@@ -29,7 +29,7 @@ Outre la découverte de la plateforme dans son ensemble voici les différentes �
 ## Creation du Flux
 
 Pour cela on va utiliser l'APIs de FLow Manager à travers la méthode subscriptions : 
-Le partenaire PHARMACIE1 a déjà été pré-crée pour les besoins du techlab, il devra se connecter en HTTP afin de récupérer
+Le partenaire PHARMACIE2 a déjà été pré-crée pour les besoins du techlab, il devra se connecter en HTTP afin de récupérer
 les ordonnances mises à sa disposition.
 
 Voici le json qui sera a fournir en body de la requête 
