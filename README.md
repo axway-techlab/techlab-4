@@ -1,5 +1,5 @@
 # Techlab - Faciliter le partage de données en toute sécurité
-# Voici les liens pour chaque stagiaire
+# Voici les liens vers la documentation
 
 - [Stagiaire 1 ](./README_Stagiaire1.md)
 - [Stagiaire 2 ](./README_Stagiaire2.md)
