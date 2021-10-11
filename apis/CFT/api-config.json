@@ -7,6 +7,12 @@
   "apiDefinition" : "TransferCFT.json",
   "backendBasepath" : "https://ptx140.demo.axway.com:2768/cft/api/v1",
   "image" : "api-image.jpg",
+  "outboundProfiles" : {
+    "_default" : {
+      "routeType" : "proxy",
+      "authenticationProfile" : "CFT AUTH"
+    }
+  },
   "securityProfiles" : [ {
     "name" : "_default",
     "isDefault" : true,
@@ -29,6 +35,14 @@
       "_id_" : 0
     },
     "type" : "http_basic"
+  }, {
+    "name" : "CFT AUTH",
+    "isDefault" : false,
+    "parameters" : {
+      "username" : "sandeep",
+      "_id_" : 1
+    },
+    "type" : "http_basic"
   } ],
   "tags" : {
     "Team" : [ "MFT" ]
@@ -45,4 +59,4 @@
     "oauthResources" : [ ]
   } ],
   "clientOrganizations" : [ "API Development" ]
-}
+}[
