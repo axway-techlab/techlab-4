@@ -53,5 +53,11 @@
     "inbound" : "false",
     "outbound" : "true"
   } ],
+  "applications" : [ {
+    "name" : "Human",
+    "enabled" : true,
+    "state" : "approved",
+    "oauthResources" : [ ]
+  } ],
   "clientOrganizations" : [ "API Development" ]
 }
