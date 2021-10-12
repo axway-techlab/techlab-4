@@ -1,8 +1,8 @@
 # Techlab - Faciliter le partage de données en toute sécurité
 # Liens Utiles
 
-- [Amplify platform] (https://platform.axway.com ) pour ce cas d'usage
-- [SecureTransport WebClient] (https://ptx140.demo.axway.com:8443)
+- [Amplify platform](https://platform.axway.com ) pour ce cas d'usage
+- [SecureTransport WebClient](https://ptx140.demo.axway.com:8443)
 
 # Sommaire
 - [Cas d'usage](#cas-usage)
