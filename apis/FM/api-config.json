@@ -38,7 +38,7 @@
     "name" : "Token",
     "isDefault" : false,
     "parameters" : {
-      "apiKey" : "token=8ad821d2-2080-4097-9252-ca1952eca3aa",
+      "apiKey" : "token=a5e32a75-1549-4087-a3a4-bd5fc7156b66",
       "apiKeyField" : "Cookie",
       "httpLocation" : "HEADER",
       "_id_" : 1
